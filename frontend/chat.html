@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="./assets/style.css?v=11">
+</head>
+
+<body>
+
+<nav id="navbar">
+    <h2>ChatApp</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="chat-container">
+
+    <div class="users-panel">
+        <h3>Online Users</h3>
+        <div id="usersList"></div>
+    </div>
+
+    <div class="chat-wrapper">
+        <h2>Group Chat</h2>
+
+        <div id="chatBox"></div>
+
+        <input type="text" id="messageInput" placeholder="Type message...">
+        <button class="btn-primary" id="sendBtn">Send</button>
+
+        <h3>Private Chat</h3>
+        <input type="text" id="privateReceiver" placeholder="Enter username">
+        <input type="text" id="privateMessage" placeholder="Private message...">
+        <button class="btn-primary" id="sendPrivateBtn">Send Private</button>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+<script src="./assets/script.js?v=11"></script>
+
+</body>
+</html>
